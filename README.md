@@ -18,7 +18,7 @@ This repository contains a **Behavior-Driven Development (BDD)** test automation
 
 ## Getting Started:
 1. Clone this repository:  
-   `git clone https://github.com/yourusername/bdd-cucumber-framework.git`
+   `git clone git@github.com:AnandBind/BDD-Cucumber-Framework.git`
 2. Install dependencies using Maven:
    `mvn install`
 3. Run tests with the following command:
