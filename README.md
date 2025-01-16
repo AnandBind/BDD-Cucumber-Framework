@@ -1,4 +1,4 @@
-# BDD-Cucumber-Framework(Selenium)
+# BDD-Cucumber-Framework (Jave-Selenium)
 
 ## Overview
 This repository contains a **Behavior-Driven Development (BDD)** test automation framework built using **Cucumber**, **Selenium WebDriver**, **JUnit**, and **Java**. The framework is designed to automate testing for web applications, with a focus on **user behavior scenarios** and easy-to-understand step definitions.
