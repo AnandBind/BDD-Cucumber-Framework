@@ -1,0 +1,13 @@
+# Environment Variables
+.env
+
+# Config Files
+config.properties
+E:\BDD-Cucumber-Framework\src\test\java\PageObjects\SokinB2B\BeneficiariesPage.java
+
+# Secret Keys
+*.key
+*.pem
+
+# Logs
+*.log

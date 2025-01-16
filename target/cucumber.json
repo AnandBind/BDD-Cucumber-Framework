@@ -1,0 +1,1694 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Check login Functionality with valid Credential",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1587505500,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User Launch the site URL",
+            "match": {
+              "location": "StepDefination.SokinB2B.LoginPageSteps.userLaunchTheSiteURL()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 258059300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "The user enters valid user Email and Password",
+            "match": {
+              "location": "StepDefination.SokinB2B.LoginPageSteps.userEnterTheValidCreadentials()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 102074800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Click on login button",
+            "match": {
+              "location": "StepDefination.SokinB2B.LoginPageSteps.clickOnLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[text()\u003d\u0027Dashboard\u0027] (tried for 30 second(s) with 500 milliseconds interval)\nBuild info: version: \u00274.21.0\u0027, revision: \u002779ed462ef4\u0027\nSystem info: os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.11\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\\Users\\Anand\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50590}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50590/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: fa1b8c0de87313ac4466ab0392fec7f9\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)\r\n\tat BaseClass.BaseClass.waitForExpectedElement(BaseClass.java:58)\r\n\tat PageObjects.SokinB2B.LoginPage.isDisplayDashBorad(LoginPage.java:36)\r\n\tat StepDefination.SokinB2B.LoginPageSteps.navigateOnDashboard(LoginPageSteps.java:55)\r\n\tat ✽.User navigate on dashboard(file:///E:/BDD-Cucumber-Framework/src/test/java/Features/SokinB2B/Beneficiaries.feature:7)\r\n",
+              "duration": 30440632000,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "User navigate on dashboard",
+            "match": {
+              "location": "StepDefination.SokinB2B.LoginPageSteps.navigateOnDashboard()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2025-01-15T13:19:33.937Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1506014800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "Verify Different Modules Of Leftside Pannel",
+        "description": "",
+        "id": "check-beneficiaries-functionality;verify-different-modules-of-leftside-pannel",
+        "after": [
+          {
+            "result": {
+              "duration": 151920100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2001500,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "User is on Dashboard Page",
+            "match": {
+              "location": "StepDefination.SokinB2B.BeneficiariesSteps.userOnDashboard()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1001800,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "User Should See Different Left Pannel Modules:",
+            "match": {
+              "location": "StepDefination.SokinB2B.BeneficiariesSteps.verifyLeftPannelOptions(java.util.List\u003cjava.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Dashboard"
+                ]
+              },
+              {
+                "cells": [
+                  "Transfer"
+                ]
+              },
+              {
+                "cells": [
+                  "Beneficiaries"
+                ]
+              },
+              {
+                "cells": [
+                  "Transaction History"
+                ]
+              },
+              {
+                "cells": [
+                  "Maker Request"
+                ]
+              },
+              {
+                "cells": [
+                  "Sokin Pay"
+                ]
+              },
+              {
+                "cells": [
+                  "Direct Debit"
+                ]
+              },
+              {
+                "cells": [
+                  "Partner Portal"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@new1"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@regrassion"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Check login Functionality with valid Credential",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1413436400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User Launch the site URL",
+            "match": {
+              "location": "StepDefination.SokinB2B.LoginPageSteps.userLaunchTheSiteURL()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 260060600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "The user enters valid user Email and Password",
+            "match": {
+              "location": "StepDefination.SokinB2B.LoginPageSteps.userEnterTheValidCreadentials()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 103034600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Click on login button",
+            "match": {
+              "location": "StepDefination.SokinB2B.LoginPageSteps.clickOnLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[text()\u003d\u0027Dashboard\u0027] (tried for 30 second(s) with 500 milliseconds interval)\nBuild info: version: \u00274.21.0\u0027, revision: \u002779ed462ef4\u0027\nSystem info: os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.11\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\\Users\\Anand\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50618}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50618/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: a2402168756ca325bfb47083dcac8f9a\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)\r\n\tat BaseClass.BaseClass.waitForExpectedElement(BaseClass.java:58)\r\n\tat PageObjects.SokinB2B.LoginPage.isDisplayDashBorad(LoginPage.java:36)\r\n\tat StepDefination.SokinB2B.LoginPageSteps.navigateOnDashboard(LoginPageSteps.java:55)\r\n\tat ✽.User navigate on dashboard(file:///E:/BDD-Cucumber-Framework/src/test/java/Features/SokinB2B/Beneficiaries.feature:7)\r\n",
+              "duration": 30420542600,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "User navigate on dashboard",
+            "match": {
+              "location": "StepDefination.SokinB2B.LoginPageSteps.navigateOnDashboard()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2025-01-15T13:20:08.066Z",
+        "before": [
+          {
+            "result": {
+              "duration": 772376800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 27,
+        "name": "Verify Beneficiaries Module of Leftside Pannel Is Clickable",
+        "description": "",
+        "id": "check-beneficiaries-functionality;verify-beneficiaries-module-of-leftside-pannel-is-clickable",
+        "after": [
+          {
+            "result": {
+              "duration": 132085400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "User is on Dashboard Page",
+            "match": {
+              "location": "StepDefination.SokinB2B.BeneficiariesSteps.userOnDashboard()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "Verify Beneficiaries Module Is Clickable",
+            "match": {
+              "location": "StepDefination.SokinB2B.BeneficiariesSteps.verifyBeneficiaryIsClickAble()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@new1"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@regrassion"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Check login Functionality with valid Credential",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1528850200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User Launch the site URL",
+            "match": {
+              "location": "StepDefination.SokinB2B.LoginPageSteps.userLaunchTheSiteURL()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 233051800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "The user enters valid user Email and Password",
+            "match": {
+              "location": "StepDefination.SokinB2B.LoginPageSteps.userEnterTheValidCreadentials()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 97020600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Click on login button",
+            "match": {
+              "location": "StepDefination.SokinB2B.LoginPageSteps.clickOnLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[text()\u003d\u0027Dashboard\u0027] (tried for 30 second(s) with 500 milliseconds interval)\nBuild info: version: \u00274.21.0\u0027, revision: \u002779ed462ef4\u0027\nSystem info: os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.11\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\\Users\\Anand\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50643}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50643/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 926b412922e5fc4c74811204be745cc4\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)\r\n\tat BaseClass.BaseClass.waitForExpectedElement(BaseClass.java:58)\r\n\tat PageObjects.SokinB2B.LoginPage.isDisplayDashBorad(LoginPage.java:36)\r\n\tat StepDefination.SokinB2B.LoginPageSteps.navigateOnDashboard(LoginPageSteps.java:55)\r\n\tat ✽.User navigate on dashboard(file:///E:/BDD-Cucumber-Framework/src/test/java/Features/SokinB2B/Beneficiaries.feature:7)\r\n",
+              "duration": 30410086900,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "User navigate on dashboard",
+            "match": {
+              "location": "StepDefination.SokinB2B.LoginPageSteps.navigateOnDashboard()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2025-01-15T13:20:41.179Z",
+        "before": [
+          {
+            "result": {
+              "duration": 740974300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 33,
+        "name": "Verify the UI Elements of Beneficiaries Page",
+        "description": "",
+        "id": "check-beneficiaries-functionality;verify-the-ui-elements-of-beneficiaries-page",
+        "after": [
+          {
+            "result": {
+              "duration": 131210600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 998900,
+              "status": "skipped"
+            },
+            "line": 34,
+            "name": "User click on Beneficiaries",
+            "match": {
+              "location": "StepDefination.SokinB2B.BeneficiariesSteps.userClickOnBeneficiaries()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1002300,
+              "status": "skipped"
+            },
+            "line": 35,
+            "name": "User Should See Following Elements:",
+            "match": {
+              "location": "StepDefination.SokinB2B.BeneficiariesSteps.verifyUserShouldSeeFollowingElementsofBeneficiryPage(java.util.List\u003cjava.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Beneficiary Name"
+                ]
+              },
+              {
+                "cells": [
+                  "Country"
+                ]
+              },
+              {
+                "cells": [
+                  "Account Number"
+                ]
+              },
+              {
+                "cells": [
+                  "Beneficiary ID"
+                ]
+              },
+              {
+                "cells": [
+                  "Currency"
+                ]
+              },
+              {
+                "cells": [
+                  "Account Type"
+                ]
+              },
+              {
+                "cells": [
+                  "Add Beneficiary"
+                ]
+              },
+              {
+                "cells": [
+                  "search"
+                ]
+              },
+              {
+                "cells": [
+                  "External Beneficiary"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@new1"
+          },
+          {
+            "name": "@regrassion"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Check login Functionality with valid Credential",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1459374100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User Launch the site URL",
+            "match": {
+              "location": "StepDefination.SokinB2B.LoginPageSteps.userLaunchTheSiteURL()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 237054700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "The user enters valid user Email and Password",
+            "match": {
+              "location": "StepDefination.SokinB2B.LoginPageSteps.userEnterTheValidCreadentials()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 99192800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Click on login button",
+            "match": {
+              "location": "StepDefination.SokinB2B.LoginPageSteps.clickOnLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[text()\u003d\u0027Dashboard\u0027] (tried for 30 second(s) with 500 milliseconds interval)\nBuild info: version: \u00274.21.0\u0027, revision: \u002779ed462ef4\u0027\nSystem info: os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.11\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\\Users\\Anand\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50670}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50670/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: e9105a15bac40c22280d8b8fac528974\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)\r\n\tat BaseClass.BaseClass.waitForExpectedElement(BaseClass.java:58)\r\n\tat PageObjects.SokinB2B.LoginPage.isDisplayDashBorad(LoginPage.java:36)\r\n\tat StepDefination.SokinB2B.LoginPageSteps.navigateOnDashboard(LoginPageSteps.java:55)\r\n\tat ✽.User navigate on dashboard(file:///E:/BDD-Cucumber-Framework/src/test/java/Features/SokinB2B/Beneficiaries.feature:7)\r\n",
+              "duration": 30372982700,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "User navigate on dashboard",
+            "match": {
+              "location": "StepDefination.SokinB2B.LoginPageSteps.navigateOnDashboard()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2025-01-15T13:21:14.330Z",
+        "before": [
+          {
+            "result": {
+              "duration": 764037500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 47,
+        "name": "Verify Add Beneficiary button is clickable",
+        "description": "",
+        "id": "check-beneficiaries-functionality;verify-add-beneficiary-button-is-clickable",
+        "after": [
+          {
+            "result": {
+              "duration": 137091900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 998600,
+              "status": "skipped"
+            },
+            "line": 48,
+            "name": "User is on Dashboard Page",
+            "match": {
+              "location": "StepDefination.SokinB2B.BeneficiariesSteps.userOnDashboard()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 49,
+            "name": "User click on Beneficiaries",
+            "match": {
+              "location": "StepDefination.SokinB2B.BeneficiariesSteps.userClickOnBeneficiaries()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000300,
+              "status": "skipped"
+            },
+            "line": 50,
+            "name": "Verify User Is Able to Click On Add button",
+            "match": {
+              "location": "StepDefination.SokinB2B.BeneficiariesSteps.verifyAddBeneficiaryButtonIsClickable()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@new1"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@regrassion"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Check login Functionality with valid Credential",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1551848900,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User Launch the site URL",
+            "match": {
+              "location": "StepDefination.SokinB2B.LoginPageSteps.userLaunchTheSiteURL()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 237052500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "The user enters valid user Email and Password",
+            "match": {
+              "location": "StepDefination.SokinB2B.LoginPageSteps.userEnterTheValidCreadentials()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 111024300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Click on login button",
+            "match": {
+              "location": "StepDefination.SokinB2B.LoginPageSteps.clickOnLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[text()\u003d\u0027Dashboard\u0027] (tried for 30 second(s) with 500 milliseconds interval)\nBuild info: version: \u00274.21.0\u0027, revision: \u002779ed462ef4\u0027\nSystem info: os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.11\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\\Users\\Anand\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50694}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50694/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 234a9e22576b4944b9ae99e1aba1c390\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)\r\n\tat BaseClass.BaseClass.waitForExpectedElement(BaseClass.java:58)\r\n\tat PageObjects.SokinB2B.LoginPage.isDisplayDashBorad(LoginPage.java:36)\r\n\tat StepDefination.SokinB2B.LoginPageSteps.navigateOnDashboard(LoginPageSteps.java:55)\r\n\tat ✽.User navigate on dashboard(file:///E:/BDD-Cucumber-Framework/src/test/java/Features/SokinB2B/Beneficiaries.feature:7)\r\n",
+              "duration": 30398891000,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "User navigate on dashboard",
+            "match": {
+              "location": "StepDefination.SokinB2B.LoginPageSteps.navigateOnDashboard()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2025-01-15T13:21:47.410Z",
+        "before": [
+          {
+            "result": {
+              "duration": 767588100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 53,
+        "name": "Verify the Different Options Is Display of Add Beneficiaries",
+        "description": "",
+        "id": "check-beneficiaries-functionality;verify-the-different-options-is-display-of-add-beneficiaries",
+        "after": [
+          {
+            "result": {
+              "duration": 157985000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 990200,
+              "status": "skipped"
+            },
+            "line": 54,
+            "name": "User click on Beneficiaries",
+            "match": {
+              "location": "StepDefination.SokinB2B.BeneficiariesSteps.userClickOnBeneficiaries()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1002700,
+              "status": "skipped"
+            },
+            "line": 55,
+            "name": "User click On Add Beneficiaries button",
+            "match": {
+              "location": "StepDefination.SokinB2B.BeneficiariesSteps.clickOnAddBeneficiariesButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 56,
+            "name": "User Should See Following Options:",
+            "match": {
+              "location": "StepDefination.SokinB2B.BeneficiariesSteps.verifyFollowingOptionsOfAddBeneficiary(java.util.List\u003cjava.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Sokin Beneficiary"
+                ]
+              },
+              {
+                "cells": [
+                  "External Beneficiary"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@new1"
+          },
+          {
+            "name": "@regrassion"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Check login Functionality with valid Credential",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1464623400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User Launch the site URL",
+            "match": {
+              "location": "StepDefination.SokinB2B.LoginPageSteps.userLaunchTheSiteURL()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 250058400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "The user enters valid user Email and Password",
+            "match": {
+              "location": "StepDefination.SokinB2B.LoginPageSteps.userEnterTheValidCreadentials()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 103022200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Click on login button",
+            "match": {
+              "location": "StepDefination.SokinB2B.LoginPageSteps.clickOnLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[text()\u003d\u0027Dashboard\u0027] (tried for 30 second(s) with 500 milliseconds interval)\nBuild info: version: \u00274.21.0\u0027, revision: \u002779ed462ef4\u0027\nSystem info: os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.11\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\\Users\\Anand\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50717}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50717/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: acb75fe6d487335fb3fd51f56dd620dc\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)\r\n\tat BaseClass.BaseClass.waitForExpectedElement(BaseClass.java:58)\r\n\tat PageObjects.SokinB2B.LoginPage.isDisplayDashBorad(LoginPage.java:36)\r\n\tat StepDefination.SokinB2B.LoginPageSteps.navigateOnDashboard(LoginPageSteps.java:55)\r\n\tat ✽.User navigate on dashboard(file:///E:/BDD-Cucumber-Framework/src/test/java/Features/SokinB2B/Beneficiaries.feature:7)\r\n",
+              "duration": 30426778000,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "User navigate on dashboard",
+            "match": {
+              "location": "StepDefination.SokinB2B.LoginPageSteps.navigateOnDashboard()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2025-01-15T13:22:20.643Z",
+        "before": [
+          {
+            "result": {
+              "duration": 748276100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 71,
+        "name": "Verify Required Field To Add Sokin Beneficiary",
+        "description": "",
+        "id": "check-beneficiaries-functionality;verify-required-field-to-add-sokin-beneficiary",
+        "after": [
+          {
+            "result": {
+              "duration": 131027000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 991700,
+              "status": "skipped"
+            },
+            "line": 72,
+            "name": "User click on Beneficiaries",
+            "match": {
+              "location": "StepDefination.SokinB2B.BeneficiariesSteps.userClickOnBeneficiaries()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 73,
+            "name": "User click On Add Beneficiaries button",
+            "match": {
+              "location": "StepDefination.SokinB2B.BeneficiariesSteps.clickOnAddBeneficiariesButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 998500,
+              "status": "skipped"
+            },
+            "line": 74,
+            "name": "Click On Sokin Beneficiary",
+            "match": {
+              "location": "StepDefination.SokinB2B.BeneficiariesSteps.clickOnSokinBeneficiary()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 75,
+            "name": "User click On Save button For Add Beneficiary",
+            "match": {
+              "location": "StepDefination.SokinB2B.BeneficiariesSteps.clickOnBeneficiarySaveButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 76,
+            "name": "User Should View Following Error Message:",
+            "match": {
+              "location": "StepDefination.SokinB2B.BeneficiariesSteps.beneficiaryisRequered(java.util.List\u003cjava.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Beneficiary is required"
+                ]
+              },
+              {
+                "cells": [
+                  "Currency is required"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@new1"
+          },
+          {
+            "name": "@regrassion"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Check login Functionality with valid Credential",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1531938000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User Launch the site URL",
+            "match": {
+              "location": "StepDefination.SokinB2B.LoginPageSteps.userLaunchTheSiteURL()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 230051700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "The user enters valid user Email and Password",
+            "match": {
+              "location": "StepDefination.SokinB2B.LoginPageSteps.userEnterTheValidCreadentials()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 99023600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Click on login button",
+            "match": {
+              "location": "StepDefination.SokinB2B.LoginPageSteps.clickOnLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[text()\u003d\u0027Dashboard\u0027] (tried for 30 second(s) with 500 milliseconds interval)\nBuild info: version: \u00274.21.0\u0027, revision: \u002779ed462ef4\u0027\nSystem info: os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.11\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\\Users\\Anand\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50742}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50742/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: e015085b50e5ef3d8519a526833a3635\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)\r\n\tat BaseClass.BaseClass.waitForExpectedElement(BaseClass.java:58)\r\n\tat PageObjects.SokinB2B.LoginPage.isDisplayDashBorad(LoginPage.java:36)\r\n\tat StepDefination.SokinB2B.LoginPageSteps.navigateOnDashboard(LoginPageSteps.java:55)\r\n\tat ✽.User navigate on dashboard(file:///E:/BDD-Cucumber-Framework/src/test/java/Features/SokinB2B/Beneficiaries.feature:7)\r\n",
+              "duration": 30415400900,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "User navigate on dashboard",
+            "match": {
+              "location": "StepDefination.SokinB2B.LoginPageSteps.navigateOnDashboard()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2025-01-15T13:22:53.777Z",
+        "before": [
+          {
+            "result": {
+              "duration": 780230700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 81,
+        "name": "Verify Invalid Corporate Id to create Sokin Beneficiary",
+        "description": "",
+        "id": "check-beneficiaries-functionality;verify-invalid-corporate-id-to-create-sokin-beneficiary",
+        "after": [
+          {
+            "result": {
+              "duration": 134397500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1002000,
+              "status": "skipped"
+            },
+            "line": 82,
+            "name": "User click on Beneficiaries",
+            "match": {
+              "location": "StepDefination.SokinB2B.BeneficiariesSteps.userClickOnBeneficiaries()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 83,
+            "name": "User click On Add Beneficiaries button",
+            "match": {
+              "location": "StepDefination.SokinB2B.BeneficiariesSteps.clickOnAddBeneficiariesButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 84,
+            "name": "Click On Sokin Beneficiary",
+            "match": {
+              "location": "StepDefination.SokinB2B.BeneficiariesSteps.clickOnSokinBeneficiary()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 85,
+            "name": "User Enter InValid CorporateBeneficiaryID As \"122321\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"122321\"",
+                  "offset": 45
+                }
+              ],
+              "location": "StepDefination.SokinB2B.BeneficiariesSteps.enterInvalidCorporateID(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 86,
+            "name": "Click On Currency Dropdown and Select Currency \"Currency.key\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Currency.key\"",
+                  "offset": 47
+                }
+              ],
+              "location": "StepDefination.SokinB2B.BeneficiariesSteps.clickOnDropdownAndSelectCurrencry(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 87,
+            "name": "User click On Save button For Add Beneficiary",
+            "match": {
+              "location": "StepDefination.SokinB2B.BeneficiariesSteps.clickOnBeneficiarySaveButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 88,
+            "name": "User Should See Invalid Message \"Invalid corporate code.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Invalid corporate code.\"",
+                  "offset": 32
+                }
+              ],
+              "location": "StepDefination.SokinB2B.BeneficiariesSteps.verifyInvalidMessage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@new1"
+          },
+          {
+            "name": "@regrassion"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Check login Functionality with valid Credential",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1553680400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User Launch the site URL",
+            "match": {
+              "location": "StepDefination.SokinB2B.LoginPageSteps.userLaunchTheSiteURL()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 232050900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "The user enters valid user Email and Password",
+            "match": {
+              "location": "StepDefination.SokinB2B.LoginPageSteps.userEnterTheValidCreadentials()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 103024100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Click on login button",
+            "match": {
+              "location": "StepDefination.SokinB2B.LoginPageSteps.clickOnLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[text()\u003d\u0027Dashboard\u0027] (tried for 30 second(s) with 500 milliseconds interval)\nBuild info: version: \u00274.21.0\u0027, revision: \u002779ed462ef4\u0027\nSystem info: os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.11\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\\Users\\Anand\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50766}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50766/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 37b3bb0ec436dfed362efd4bc72a073b\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)\r\n\tat BaseClass.BaseClass.waitForExpectedElement(BaseClass.java:58)\r\n\tat PageObjects.SokinB2B.LoginPage.isDisplayDashBorad(LoginPage.java:36)\r\n\tat StepDefination.SokinB2B.LoginPageSteps.navigateOnDashboard(LoginPageSteps.java:55)\r\n\tat ✽.User navigate on dashboard(file:///E:/BDD-Cucumber-Framework/src/test/java/Features/SokinB2B/Beneficiaries.feature:7)\r\n",
+              "duration": 30384451600,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "User navigate on dashboard",
+            "match": {
+              "location": "StepDefination.SokinB2B.LoginPageSteps.navigateOnDashboard()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2025-01-15T13:23:26.979Z",
+        "before": [
+          {
+            "result": {
+              "duration": 802316700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 91,
+        "name": "Verify Error Message of Add Beneficiary",
+        "description": "",
+        "id": "check-beneficiaries-functionality;verify-error-message-of-add-beneficiary",
+        "after": [
+          {
+            "result": {
+              "duration": 132091900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 997900,
+              "status": "skipped"
+            },
+            "line": 92,
+            "name": "User click on Beneficiaries",
+            "match": {
+              "location": "StepDefination.SokinB2B.BeneficiariesSteps.userClickOnBeneficiaries()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 93,
+            "name": "User click On Add Beneficiaries button",
+            "match": {
+              "location": "StepDefination.SokinB2B.BeneficiariesSteps.clickOnAddBeneficiariesButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 94,
+            "name": "Click On Sokin Beneficiary",
+            "match": {
+              "location": "StepDefination.SokinB2B.BeneficiariesSteps.clickOnSokinBeneficiary()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 95,
+            "name": "Eneter the Char and Special Char as \"@test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"@test\"",
+                  "offset": 36
+                }
+              ],
+              "location": "StepDefination.SokinB2B.BeneficiariesSteps.enterTheChar(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 96,
+            "name": "View Error Message \"Please enter a valid Beneficiary\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Please enter a valid Beneficiary\"",
+                  "offset": 19
+                }
+              ],
+              "location": "StepDefination.SokinB2B.BeneficiariesSteps.verifyEnterValidBeneficiary(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@new1"
+          },
+          {
+            "name": "@regrassion"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Check login Functionality with valid Credential",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1790744600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User Launch the site URL",
+            "match": {
+              "location": "StepDefination.SokinB2B.LoginPageSteps.userLaunchTheSiteURL()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 233051200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "The user enters valid user Email and Password",
+            "match": {
+              "location": "StepDefination.SokinB2B.LoginPageSteps.userEnterTheValidCreadentials()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 100021600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Click on login button",
+            "match": {
+              "location": "StepDefination.SokinB2B.LoginPageSteps.clickOnLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[text()\u003d\u0027Dashboard\u0027] (tried for 30 second(s) with 500 milliseconds interval)\nBuild info: version: \u00274.21.0\u0027, revision: \u002779ed462ef4\u0027\nSystem info: os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.11\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\\Users\\Anand\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50791}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50791/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: d850efc639072b2ef996ae5a5c06b218\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)\r\n\tat BaseClass.BaseClass.waitForExpectedElement(BaseClass.java:58)\r\n\tat PageObjects.SokinB2B.LoginPage.isDisplayDashBorad(LoginPage.java:36)\r\n\tat StepDefination.SokinB2B.LoginPageSteps.navigateOnDashboard(LoginPageSteps.java:55)\r\n\tat ✽.User navigate on dashboard(file:///E:/BDD-Cucumber-Framework/src/test/java/Features/SokinB2B/Beneficiaries.feature:7)\r\n",
+              "duration": 30426663300,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "User navigate on dashboard",
+            "match": {
+              "location": "StepDefination.SokinB2B.LoginPageSteps.navigateOnDashboard()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2025-01-15T13:24:00.195Z",
+        "before": [
+          {
+            "result": {
+              "duration": 763166300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 100,
+        "name": "Verify User Successfuly Add Sokin Beneficiary",
+        "description": "",
+        "id": "check-beneficiaries-functionality;verify-user-successfuly-add-sokin-beneficiary",
+        "after": [
+          {
+            "result": {
+              "duration": 138530800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 101,
+            "name": "User click on Beneficiaries",
+            "match": {
+              "location": "StepDefination.SokinB2B.BeneficiariesSteps.userClickOnBeneficiaries()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 102,
+            "name": "User Navigate on Beneficiaries Page",
+            "match": {
+              "location": "StepDefination.SokinB2B.BeneficiariesSteps.userNavigateOnBenefieciaryPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 103,
+            "name": "User click On Add Beneficiaries button",
+            "match": {
+              "location": "StepDefination.SokinB2B.BeneficiariesSteps.clickOnAddBeneficiariesButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 104,
+            "name": "Click On Sokin Beneficiary",
+            "match": {
+              "location": "StepDefination.SokinB2B.BeneficiariesSteps.clickOnSokinBeneficiary()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 105,
+            "name": "User Enter CorporateBeneficiaryID \"Beneficiary_Corporate_ID\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Beneficiary_Corporate_ID\"",
+                  "offset": 34
+                }
+              ],
+              "location": "StepDefination.SokinB2B.BeneficiariesSteps.enterCorporateBeneficiaryID(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 106,
+            "name": "Click On Currency Dropdown and Select Currency \"Currency.key\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Currency.key\"",
+                  "offset": 47
+                }
+              ],
+              "location": "StepDefination.SokinB2B.BeneficiariesSteps.clickOnDropdownAndSelectCurrencry(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 107,
+            "name": "User click On Save button For Add Beneficiary",
+            "match": {
+              "location": "StepDefination.SokinB2B.BeneficiariesSteps.clickOnBeneficiarySaveButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 108,
+            "name": "Sokin Beneficiary Created Successfully \"Beneficiary created successfully.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Beneficiary created successfully.\"",
+                  "offset": 39
+                }
+              ],
+              "location": "StepDefination.SokinB2B.BeneficiariesSteps.verifyCreatedSuccessfullyMessageAndClickOnOkButton(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@new1"
+          },
+          {
+            "name": "@regrassion"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Check login Functionality with valid Credential",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1519989800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User Launch the site URL",
+            "match": {
+              "location": "StepDefination.SokinB2B.LoginPageSteps.userLaunchTheSiteURL()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 238058100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "The user enters valid user Email and Password",
+            "match": {
+              "location": "StepDefination.SokinB2B.LoginPageSteps.userEnterTheValidCreadentials()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 111027100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Click on login button",
+            "match": {
+              "location": "StepDefination.SokinB2B.LoginPageSteps.clickOnLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[text()\u003d\u0027Dashboard\u0027] (tried for 30 second(s) with 500 milliseconds interval)\nBuild info: version: \u00274.21.0\u0027, revision: \u002779ed462ef4\u0027\nSystem info: os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.11\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\\Users\\Anand\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50814}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50814/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: f1b1c4520c4b7725611629f27b3bed90\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)\r\n\tat BaseClass.BaseClass.waitForExpectedElement(BaseClass.java:58)\r\n\tat PageObjects.SokinB2B.LoginPage.isDisplayDashBorad(LoginPage.java:36)\r\n\tat StepDefination.SokinB2B.LoginPageSteps.navigateOnDashboard(LoginPageSteps.java:55)\r\n\tat ✽.User navigate on dashboard(file:///E:/BDD-Cucumber-Framework/src/test/java/Features/SokinB2B/Beneficiaries.feature:7)\r\n",
+              "duration": 30410632100,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "User navigate on dashboard",
+            "match": {
+              "location": "StepDefination.SokinB2B.LoginPageSteps.navigateOnDashboard()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2025-01-15T13:24:33.659Z",
+        "before": [
+          {
+            "result": {
+              "duration": 820310700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 138,
+        "name": "Verify Sokin Transfer Successfully",
+        "description": "",
+        "id": "check-beneficiaries-functionality;verify-sokin-transfer-successfully",
+        "after": [
+          {
+            "result": {
+              "duration": 151644400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1004100,
+              "status": "skipped"
+            },
+            "line": 139,
+            "name": "User click on Beneficiaries",
+            "match": {
+              "location": "StepDefination.SokinB2B.BeneficiariesSteps.userClickOnBeneficiaries()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 140,
+            "name": "User click on Beneficiary dropdown",
+            "match": {
+              "location": "StepDefination.SokinB2B.BeneficiariesSteps.clickonBeneficieryDropdown()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 141,
+            "name": "Select Sokin Beneficiary and click on Search button",
+            "match": {
+              "location": "StepDefination.SokinB2B.BeneficiariesSteps.selectSokinBeneficiary()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 142,
+            "name": "Click On Transfer Icon Of Created Sokin Beneficiarie",
+            "match": {
+              "location": "StepDefination.SokinB2B.BeneficiariesSteps.findBeneficiarieAndClickOnTransfer()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 143,
+            "name": "User Click On Source Dropdown and Select Currencry as Australian Dollar",
+            "match": {
+              "location": "StepDefination.SokinB2B.BeneficiariesSteps.clickOnSouceAndSelectCurrency()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 144,
+            "name": "Enter Send Amount and click On Next button \"SendAmount.key\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"SendAmount.key\"",
+                  "offset": 43
+                }
+              ],
+              "location": "StepDefination.SokinB2B.BeneficiariesSteps.enterSendAmount(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1001500,
+              "status": "skipped"
+            },
+            "line": 145,
+            "name": "User Click On Submit button",
+            "match": {
+              "location": "StepDefination.SokinB2B.BeneficiariesSteps.clickOnSubmitButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 146,
+            "name": "User Should View The Successful Message \"Successful\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Successful\"",
+                  "offset": 40
+                }
+              ],
+              "location": "StepDefination.SokinB2B.BeneficiariesSteps.verifyTransferSuccessfulMessage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@new1"
+          },
+          {
+            "name": "@regrassion"
+          }
+        ]
+      }
+    ],
+    "name": "Check Beneficiaries Functionality",
+    "description": "",
+    "id": "check-beneficiaries-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/Features/SokinB2B/Beneficiaries.feature",
+    "tags": []
+  }
+]

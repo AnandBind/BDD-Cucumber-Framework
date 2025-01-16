@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Cucumber Java",
+            "request": "launch",
+            "mainClass": "io.cucumber.core.cli.Main",
+            "projectName": "SOKIN",
+            "args": [
+                "--plugin",
+                "pretty",
+                "--glue",
+                "StepDefination",
+                "--glue",
+                "BaseClass",
+                "src/test/java/Features/Login.feature"
+            ],
+            "cwd": "E:/Sokin",
+            "console": "internalConsole"
+        }
+    ]
+}

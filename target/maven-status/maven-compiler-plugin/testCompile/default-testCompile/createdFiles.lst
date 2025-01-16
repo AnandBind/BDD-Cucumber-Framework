@@ -1,0 +1,10 @@
+StepDefination\SokinB2B\RoleManagementSteps.class
+PageObjects\SokinB2B\RoleManagementPage.class
+StepDefination\SokinB2B\MakerRequestSteps.class
+TestRunner\TestRunner.class
+PageObjects\SokinB2B\BeneficiariesPage.class
+StepDefination\SokinB2B\BeneficiariesSteps.class
+StepDefination\SokinB2B\LoginPageSteps.class
+PageObjects\SokinB2B\MakerRequestPage.class
+PageObjects\SokinB2B\LoginPage.class
+TestRunner\RerunnerTest.class
