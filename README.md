@@ -1,4 +1,4 @@
-Selenium Java BDD Automation Framework
+Selenium java Bdd cucumber framework
 
 A comprehensive test automation framework using Selenium WebDriver with Java and Cucumber (BDD), supporting UI and API testing with a clean, maintainable structure.
 
