@@ -8,30 +8,38 @@ A comprehensive test automation framework using Selenium WebDriver with Java and
 
 Environment configuration: logical environments (develop, uat, prod) are defined under src/test/java/config/environments/; secrets stay in environment variables (config/Secrets.java); getResolvedEnvConfig() merges typed defaults with optional .env / CI overrides; tests receive envConfig via shared test context (context/TestContext.java), which step definitions and hooks use.
 
-📋 Table of Contents
+## 📋 Table of Contents
 
-Getting Started
-Project Structure
-Environment configuration
-Folder Purpose & Rules
-Naming Conventions
-Best Practices
-Examples
-Running Tests
-CI/CD Integration
+- Getting Started  
+- Project Structure  
+- Environment Configuration  
+- Folder Purpose & Rules  
+- Naming Conventions  
+- Best Practices  
+- Examples  
+- Running Tests  
+- CI/CD Integration  
 
-🚀 Getting Started
-Prerequisites
-Java 11+ (17 recommended)
-Maven or Gradle
-Chrome / Firefox
-IDE (IntelliJ recommended)
-Installation
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Java 11+ (17 recommended)  
+- Maven or Gradle  
+- Chrome / Firefox  
+- IDE (IntelliJ recommended)  
+
+---
+
+### Installation
 
 Clone the repository (if applicable)
 
 Install dependencies:
 
+```bash
 mvn clean install
 WebDriver Setup
 
@@ -41,13 +49,20 @@ Note: For remote execution (Grid/Docker), configure driver in DriverFactory.java
 
 Environment variables and .env files
 
-Selecting the environment: Set TEST_ENV or ENVIRONMENT to develop, uat, or prod (TEST_ENV wins if both are set). Defaults to uat.
+Selecting the environment:
+Set TEST_ENV or ENVIRONMENT to develop, uat, or prod (TEST_ENV wins if both are set). Defaults to uat.
 
-Local dotenv: When not in CI, framework loads env/.env.<name> where <name> is lowercased (e.g. env/.env.uat, env/.env.develop, env/.env.prod). Filename must match environment.
+Local dotenv:
+When not in CI, framework loads env/.env.<name> where <name> is lowercased
+(e.g. env/.env.uat, env/.env.develop, env/.env.prod).
 
-Defaults vs overrides: URLs and non-secret defaults live in config/environments/*.java. Optional variables in .env override them — e.g. BASE_URL, API_BASE_URL, LOGIN_VALID_USERNAME, etc.
+Defaults vs overrides:
+URLs and non-secret defaults live in config/environments/*.java.
+Optional variables in .env override them — e.g. BASE_URL, API_BASE_URL, LOGIN_VALID_USERNAME.
 
-Secrets: Passwords, API keys, tokens must not be committed; use .env locally and CI secrets. They are accessed via getSecrets().
+Secrets:
+Passwords, API keys, tokens must not be committed.
+Use .env locally and CI secrets. Access via getSecrets().
 
 Verify installation
 mvn test -Dcucumber.options="--dry-run"
