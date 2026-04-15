@@ -1,45 +1,52 @@
-# 🌐 Selenium Java Automation Framework
+Selenium Java BDD Automation Framework
 
-A robust, scalable, and maintainable **test automation framework** built using:
+A comprehensive test automation framework using Selenium WebDriver with Java and Cucumber (BDD), supporting UI and API testing with a clean, maintainable structure.
 
-* **Selenium WebDriver**
-* **Java**
-* **TestNG**
-* **Optional: Cucumber (BDD)**
-* **Maven (build management)**
+Environment configuration: logical environments (develop, uat, prod) are defined under src/test/java/config/environments/; secrets stay in environment variables (config/Secrets.java); getResolvedEnvConfig() merges typed defaults with optional .env / CI overrides; tests receive envConfig via shared test context (context/TestContext.java), which step definitions and hooks use.
 
-This framework is designed following **enterprise-grade automation principles**, focusing on:
+📋 Table of Contents
 
-* Scalability
-* Maintainability
-* Reusability
-* CI/CD readiness
-* Low flakiness
+Getting Started
+Project Structure
+Environment configuration
+Folder Purpose & Rules
+Naming Conventions
+Best Practices
+Examples
+Running Tests
+CI/CD Integration
 
----
+🚀 Getting Started
+Prerequisites
+Java 11+ (17 recommended)
+Maven or Gradle
+Chrome / Firefox
+IDE (IntelliJ recommended)
+Installation
 
-# 🧠 Framework Philosophy
+Clone the repository (if applicable)
 
-This framework is built with the principle:
+Install dependencies:
 
-> “Automation should be reliable, readable, and easy to scale — not just working.”
+mvn clean install
+WebDriver Setup
 
----
+Selenium 4 includes Selenium Manager, so no manual driver setup is required.
 
-# 📋 Table of Contents
+Note: For remote execution (Grid/Docker), configure driver in DriverFactory.java.
 
-* Architecture Overview
-* Project Structure
-* Design Patterns Used
-* Execution Flow
-* Configuration Strategy
-* Test Design Principles
-* Advanced Features
-* Running Tests
-* CI/CD Integration
-* Best Practices
-* Common Pitfalls
+Environment variables and .env files
 
+Selecting the environment: Set TEST_ENV or ENVIRONMENT to develop, uat, or prod (TEST_ENV wins if both are set). Defaults to uat.
+
+Local dotenv: When not in CI, framework loads env/.env.<name> where <name> is lowercased (e.g. env/.env.uat, env/.env.develop, env/.env.prod). Filename must match environment.
+
+Defaults vs overrides: URLs and non-secret defaults live in config/environments/*.java. Optional variables in .env override them — e.g. BASE_URL, API_BASE_URL, LOGIN_VALID_USERNAME, etc.
+
+Secrets: Passwords, API keys, tokens must not be committed; use .env locally and CI secrets. They are accessed via getSecrets().
+
+Verify installation
+mvn test -Dcucumber.options="--dry-run"
 ---
 
 # 🏗️ Architecture Overview
