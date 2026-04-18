@@ -11,13 +11,11 @@ Feature: Check Beneficiaries Functionality
   Scenario: Verify Different Modules Of Leftside Pannel
     When User is on Dashboard Page
     Then User Should See Different Left Pannel Modules:
-      | Dashboard           |
-      | Transfer            |
-      | Beneficiaries       |
-      | Transaction History |
-      | Maker Request       |
-      | Sokin Pay           |
-      | Direct Debit        |
-      | Partner Portal      |
+      | Dashboard        |
+      | Playments        |
+      | Transfer         |
+      |  History         |
+      | Transfer Request |
+     
 
  
