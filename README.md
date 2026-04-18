@@ -91,13 +91,12 @@ project-root/
 ├── src/
 │   ├── main/java/
 │   │   ├── base/                  # BaseTest, DriverFactory
-│   │   ├── pages/                 # Page Objects
-│   │   ├── services/              # Business logic layer
 │   │   ├── utils/                 # Reusable utilities
 │   │   ├── config/                # Config readers
 │   │
 │   ├── test/java/
 │   │   ├── tests/                 # Test classes (TestNG)
+|   |   ├── pages/                 # Page Objects
 │   │   ├── stepdefinitions/       # (BDD) Step definitions
 │   │   ├── runners/               # Test runners
 │   │
