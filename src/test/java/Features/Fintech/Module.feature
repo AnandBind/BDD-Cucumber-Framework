@@ -10,12 +10,12 @@ Feature: Check Beneficiaries Functionality
   @smoke @regrassion
   Scenario: Verify Different Modules Of Leftside Pannel
     When User is on Dashboard Page
-    Then User Should See Different Left Pannel Modules:
+    Then User Should See all Modules:
       | Dashboard        |
-      | Playments        |
-      | Transfer         |
+      | in wallet        |
+      | out wallet         |
       |  History         |
-      | Transfer Request |
+      | Request |
      
 
  
