@@ -24,12 +24,12 @@ public class ModuleSteps extends BaseClass {
 	ModulePage beneficiaries = new ModulePage();
 
 	
-	@Then("Verify Beneficiaries Module Is Clickable")
-	public void verifyBeneficiaryIsClickAble() {
-		assertTrue(beneficiaries.beneficiaryIsClickable());
+	@Then("Verify Each Module Is Clickable")
+	public void verifyModulesClickAble() {
+		assertTrue(beneficiaries.isClickable());
 	}
 
-	@When("User click on Beneficiaries")
+	@When("User click on wallet")
 	public void userClickOnBeneficiaries() throws InterruptedException {
 		Thread.sleep(2000);
 		beneficiaries.clickOnBeneficiaries();
@@ -43,14 +43,14 @@ public class ModuleSteps extends BaseClass {
 	}
 
 	@Then("User Should See Following Options:")
-	public void verifyFollowingOptionsOfAddBeneficiary(List<String> list) {
+	public void verifyFollowingOptionsOfDisplay(List<String> list) {
 		for (String options : list) {
 			switch (options) {
-				case "Sokin Beneficiary":
-					assertTrue(beneficiaries.sokinBeneficiaryIsDisplay());
+				case "in wallet":
+					assertTrue(beneficiaries.inIsDisplay());
 					break;
-				case "External Beneficiary":
-					assertTrue(beneficiaries.externalBeneficiarieIsDisplay());
+				case "out wallet":
+					assertTrue(beneficiaries.outIsDisplay());
 					break;
 				default:
 					throw new IllegalArgumentException("Element Not found: " + options);
