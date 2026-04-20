@@ -12,42 +12,42 @@ import BaseClass.BaseClass;
 
 public class ModulePage extends BaseClass {
 
-	public static By Beneficiaries = By.xpath("//*[text()='Beneficiaries']");
-	public static By AddBeneficiaryButton = By.xpath("//*[text()=' Add Beneficiary ']");
-	public static By SokinBeneficiary = By.xpath("//div[@class='cdk-overlay-pane']//button[1]");
-	public static By ExternalBeneficiary = By.xpath("//div[@class='cdk-overlay-pane']//button[2]");
-	public static By BeneficiarySaveButton = By.xpath("//*[text()=' Save ']");
+	public static By WalletTable = By.xpath("//*[text()='Ircts Wallet']");
+	public static By AddWallet = By.xpath("//*[text()=' Add Wallet ']");
+	public static By Beneficiary = By.xpath("//div[@class='cdk-overlay-pane']//button[1]");
+	public static By Ex_Wallet = By.xpath("//div[@class='theh hehe']//button[2]");
+	public static By SaveButton = By.xpath("//*[text()=' Save ']");
 
-	public boolean beneficiaryIsClickable() {
-		return waitForExpectedElement(Beneficiaries,10).isEnabled();
+	public boolean IsClickable() {
+		return waitForExpectedElement(WalletTable,10).isEnabled();
 	}
-	public void clickOnBeneficiaries() {
-		waitForExpectedElement(Beneficiaries, 10).click();
+	public void clickOnWallet() {
+		waitForExpectedElement(WalletTable, 10).click();
 	}
 	
 	public boolean addButtonIsClickAble() {
-		return waitForExpectedElement(AddBeneficiaryButton,10).isEnabled();
+		return waitForExpectedElement(AdButton,10).isEnabled();
 	}
 	
 	public void clickOnAddBeneficiary() {
-		waitForExpectedElement(AddBeneficiaryButton, 10).click();
+		waitForExpectedElement(AddButton, 10).click();
 	}
 
-	public boolean sokinBeneficiaryIsDisplay() {
-		return waitForExpectedElement(SokinBeneficiary, 20).isDisplayed();
+	public boolean TableIsDisplay() {
+		return waitForExpectedElement(In-Wallet-Beneficiary, 20).isDisplayed();
 
 	}
 
-	public boolean externalBeneficiarieIsDisplay() {
-		return waitForExpectedElement(ExternalBeneficiary, 10).isDisplayed();
+	public boolean exIsDisplay() {
+		return waitForExpectedElement(Ex-WalletBeneficiary, 10).isDisplayed();
 	}
 
-	public void clickOnSokinBeneficiary() {
-		waitForExpectedElement(SokinBeneficiary, 10).click();
+	public void clickOnSave() {
+		waitForExpectedElement(SaveButton, 10).click();
 	}
 
-	public void clickOnBeneficiarySaveButton() {
-		waitForExpectedElement(BeneficiarySaveButton, 20).click();
+	public void clickSaveButton() {
+		waitForExpectedElement(SaveButton, 20).click();
 	}
 
 	
